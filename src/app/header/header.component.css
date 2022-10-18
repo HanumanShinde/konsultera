@@ -1,0 +1,19 @@
+li {
+    list-style: none;
+}
+
+.mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #f7f7ff;
+
+}
+
+button {
+    border: 0;
+    outline: none;
+    background: transparent;
+
+}
+

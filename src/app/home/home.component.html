@@ -1,0 +1,33 @@
+<div class="container">
+    <button class="btn btn-primary" routerLink="/addproduct">Add PRoduct</button>
+    <h3>Recommended products</h3>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let product of this._product.products">
+            <div class="card mt-4">
+                <div class="conatainer">
+                    <div class="card-body">
+                        <div class="img">
+                            <img src="{{product.image}}" class="card-img-top" alt="" [routerLink]="['/home','view',this.index]">
+                        </div>
+                        <h5 class="card-title">{{product.product_name}}</h5>
+
+                        <p class="card-text">{{product.info}}</p>
+                    </div>
+                   
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn btn-outline-dark" ><i
+                            class="bi bi-heart"></i></button>
+                    <button type="button" class="btn btn-outline-dark"><i
+                            class="bi bi-hand-thumbs-down"></i></button>
+                    <button type="button" class="btn btn-outline-dark" ><i
+                            class="bi bi-arrow-left-right"></i></button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>

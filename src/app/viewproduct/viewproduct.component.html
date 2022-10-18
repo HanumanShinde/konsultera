@@ -1,0 +1,24 @@
+<button class="btn btn-outline-info" (click)="delete()">Delete Product</button>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <img class="image-fluid" [src]="this._product.products[this.myIndex].image" alt="">
+            </div>
+        </div>
+        <div class="col md-4">
+            <div class="card">
+                <button class="btn btn-secondary" [routerLink]="['/app','edit',this.myIndex]">Edit</button>
+        
+                <h2>{{this._product.products[this.myIndex].product_name}}</h2>
+                <h3>{{this._product.products[this.myIndex].info}}</h3>   
+            </div>
+        </div>
+    </div>
+</div>
+{{myIndex}}
+
+<pre>
+    {{this._product.products[this.myIndex] | json}}
+
+</pre>
